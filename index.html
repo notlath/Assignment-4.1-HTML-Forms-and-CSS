@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>Simple Form with CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Simple Form</h1>
+
+  <div class="forms">
+    <form action="reservation.php" method="post">
+      <div class="selector">
+        <img
+          src="./assets/user.png"
+          style="width: 1.5rem; height: 1.5 rem; margin-right: 3px"
+        />
+        <input
+          type="text"
+          id="name"
+          name="visitor_name"
+          placeholder="Name"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+          style="border: none"
+        />
+      </div>
+      <div class="selector">
+        <img
+          src="./assets/phone.png"
+          style="width: 1.5rem; height: 1.5 rem; margin-right: 3px"
+        />
+        <input
+          type="number"
+          id="name"
+          name="visitor_name"
+          placeholder="Phone Number"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+          style="border: none"
+        />
+      </div>
+      <div class="selector">
+        <img
+          src="./assets/email.png"
+          style="width: 1.5rem; height: 1.5 rem; margin-right: 3px"
+        />
+        <input
+          type="email"
+          id="name"
+          name="visitor_name"
+          placeholder="Email"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+          style="border: none"
+        />
+      </div>
+      <div class="selector">
+        <img
+          src="./assets/password.png"
+          style="width: 1.5rem; height: 1.5 rem; margin-right: 3px"
+        />
+        <input
+          type="password"
+          id="name"
+          name="visitor_name"
+          placeholder="Password"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+          style="border: none"
+        />
+      </div>
+      <br />
+      <div class="forms-1">
+        <table>
+          <td>
+            <input
+              type="checkbox"
+              required
+              name="checkbox"
+              value="check"
+              id="agree"
+            />
+          </td>
+          <td>
+            <p>
+              I agree to the <a href="#"><u>Terms and Condition</u></a> and
+              <a href="#"><u>Privacy Policy</u></a
+              >.
+            </p>
+          </td>
+        </table>
+        <button>Create Account</button>
+      </div>
+    </form>
+  </div>
+</body>
